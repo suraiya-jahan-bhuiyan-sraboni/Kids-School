@@ -1,0 +1,36 @@
+@media screen and (max-width:997px) {
+
+    :root {
+        --primary-font: 0.8rem;
+        --secondary-font: 0.9rem;
+        --primary-padding: 3rem 5rem;
+        --secondary-padding: 3rem 0;
+    }
+.navbar{
+    border: 1px solid var(--orange);
+}
+
+.menu-list,
+.contact-btn {
+    display: none;
+}
+
+.menu-icon {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

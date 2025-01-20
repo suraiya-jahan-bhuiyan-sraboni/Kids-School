@@ -1,0 +1,29 @@
+@media screen and (max-width:600px) {
+
+    :root {
+        --primary-font: 0.7rem;
+        --secondary-font: 0.9rem;
+        --primary-padding: 4rem 1.2rem;
+        --secondary-padding: 2rem 0;
+    }
+
+
+.brand>h1 {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
