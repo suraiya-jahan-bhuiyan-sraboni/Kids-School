@@ -8,11 +8,38 @@
     }
 
 
-.brand>h1 {
-    display: none;
-}
+    .brand>h1 {
+        display: none;
+    }
 
+    .menu-list,
+    .contact-btn {
+        display: none;
+    }
 
+    .menu-icon {
+        display: block;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+
+    .hero-section-part1 {
+        width: 100%;
+        gap: 1rem;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .hero-section-part2 {
+        width: 70%;
+    }
+
+    .hero-section-part1>p {
+        width: 85%;
+    }
 
 
 

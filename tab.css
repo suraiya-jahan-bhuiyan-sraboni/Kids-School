@@ -3,23 +3,33 @@
     :root {
         --primary-font: 0.8rem;
         --secondary-font: 0.9rem;
-        --primary-padding: 3rem 5rem;
+        --primary-padding: 3rem 4rem;
         --secondary-padding: 3rem 0;
     }
-.navbar{
-    border: 1px solid var(--orange);
+
+    .brand>h1 {
+        display: none;
+    }
+
+    .navbar {
+        border: 1px solid var(--orange);
+    }
+.brand>img {
+    width: 50px;
+    
+}
+.hero-section-part1>h1 {
+    font-size: 1.5rem;
+}
+.hero-section-part1 {
+    width: 55%;
+    gap: 1rem;
+
 }
 
-.menu-list,
-.contact-btn {
-    display: none;
+.hero-section-part2 {
+    width: 45%;
 }
-
-.menu-icon {
-    display: block;
-}
-
-
 
 
 
