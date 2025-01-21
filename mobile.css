@@ -50,35 +50,46 @@
         display: none;
     }
 
+    /* ---------------- our stroies section -------------------- */
     .part1 {
         display: none;
     }
 
     .our-stories {
         padding-top: 0;
-        ;
     }
 
-    .part2 {
-        height: fit-content;
-        gap: 1rem;
+    .item1 {
+        display: none;
     }
 
-    .part2 .story-card .img {
-        height: 170px;
-    }
-
-    .part2 .story-card .img .date {
-        padding: 0.5rem;
-        left: 0.6rem;
-    }
-
-    .part2 .story-card .text-section {
-        padding: 1rem;
+    .date {
+        padding: 7px;
     }
 
     .text-section {
-        text-align: center;
+        padding: 1rem;
+    }
+        .text-section >h5{
+            font-size: var(--primary-font);
+        }
+
+    /* ---------------- footer section -------------------- */
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-part1 {
+        width: 90%;
+    }
+
+    .footer-part2 {
+        text-align: start;
+        padding-left: 0.5rem;
+    }
+
+    .footer-part3 {
+        padding-left: 0.5rem;
     }
 
 
@@ -94,35 +105,6 @@
 
 
 
-
-
-
-
-}
-
-@media screen and (max-width:448px) {
-
-    .part2 .story-card .img {
-        height: 110px;
-    }
-
-    .part2 .story-card .img .date>p {
-        font-size: 0.5rem;
-    }
-
-    .part2 .story-card .text-section>h5 {
-        font-size: 0.6rem;
-    }
-
-
-
-}
-
-@media screen and (max-width:360px) {
-
-    .part2 .story-card .img {
-        height: 100px;
-    }
 
 
 }

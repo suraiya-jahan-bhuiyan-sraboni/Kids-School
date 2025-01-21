@@ -43,48 +43,46 @@
         width: 45%;
     }
 
-    .stories-card {
-        flex-direction: column;
-    }
+    /* ---------------- our stroies section -------------------- */
 
-    .part2 {
-        height: 100%;
-    }
-
-    .part2 .story-card .img {
-        height: 270px;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.text-section {
+    padding: 2rem;
 }
-
-@media screen and (max-width:850px) {
-    .part2 .story-card .img {
-        height: 204px;
+        .stories-card {
+            grid-template-areas: 'card1 card1  '
+                ' . . '
+                ' . .';
+            gap: 1rem;
+        }
+/* ----------------------------- footer section ------------------------------------- */
+    footer {
+        flex-wrap: wrap;
+        justify-content: center;
     }
+
+    .footer-part2 {
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

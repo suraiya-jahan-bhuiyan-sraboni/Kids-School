@@ -143,7 +143,7 @@ header {}
 
 .curriculum-card {
     width: 100%;
-    height: 350px;
+    height: 360px;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -159,6 +159,10 @@ header {}
 
 .curriculum-card>p {
     color: var(--dark-02);
+}
+
+.curriculum-card>a {
+    font-size: var(--primary-font);
 }
 
 .card1 {
@@ -196,18 +200,17 @@ header {}
     background-repeat: no-repeat;
 }
 
+.item1 {
+    grid-area: card1;
+}
+
 .stories-card {
     padding: var(--secondary-padding);
     border-radius: var(--primary-border-radius);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas: 'card1 card1 . . '
+                        'card1 card1 . . ';
     gap: 1rem;
-}
-
-.part1 {
-    flex: 1;
-    height: 540px;
 }
 
 .story-card {
@@ -225,45 +228,84 @@ header {}
     gap: 2rem;
 }
 
+.img {
+    position: relative;
+}
 
 .img>img {
     border-radius: 1rem 1rem 0 0;
 }
 
 .date {
-    position: relative;
+    position: absolute;
     border-radius: 47.934px;
     background: #95B226;
     color: white;
-    padding: 1rem;
+    padding: 0.8rem;
     width: fit-content;
-    top: -2rem;
-    left: 2rem;
+    bottom: -7px;
+    left: 10px;
+
 }
 
 .text {
     color: var(--dark-02);
 }
 
-.part2 {
-    height: 540px;
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
+/* ----------------------------- footer section ------------------------------------- */
+footer {
+    background-color: var(--blue);
+    padding: var(--primary-padding);
+    padding-top: 5rem;
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.footer-part1 {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
-
 }
 
-.part2 .story-card .img {
-    height: 170px;
+.footer-part1>p {
+    width: 100%;
+    padding: 0.6rem;
 }
 
-.part2 .story-card .img>img {
-    height: fit-content;
+.footer-title {
+    display: flex;
+    align-items: center;
 }
 
-.part2 .story-card .img .date {
-    font-size: var(--primary-font);
-    padding: 10px;
-    top: -1.5rem;
+.footer-title>img {
+    width: 70px;
 }
+
+.footer-title>h1 {
+    color: white;
+}
+
+.footer-part2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-part2>a {
+    color: white;
+    font-weight: 500;
+}
+
+
+.icons {
+    display: flex;
+    gap: 0.5rem;
+    padding-top: 1rem;
+}
+
+@media screen and (max-width:1100px) {}
