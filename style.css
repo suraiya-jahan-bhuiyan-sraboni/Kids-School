@@ -122,11 +122,13 @@ header {}
 .hero-section-part1>h1 {
     font-size: 2.7rem;
 }
+
 /* ---------------- standard curriculum section -------------------- */
 .standard-curriculum {
     padding: var(--primary-padding);
     text-align: center;
-    background: url('assets/bg.png') rgb(247, 247, 247) 100% / contain  no-repeat ;
+    background: url('assets/bg.png') no-repeat;
+    background-size: cover;
 }
 
 .curriculum-cards {
@@ -161,7 +163,7 @@ header {}
 
 .card1 {
     border: 0.943px solid #DEF5FF;
-    background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+    background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0) 40%), #FFF;
     box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
 }
 
@@ -173,14 +175,87 @@ header {}
 
 .card3 {
     border: 0.943px solid #F2E8FF;
-    background: linear-gradient(180deg, #EEE1FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+    background: linear-gradient(180deg, #EEE1FF 0%, rgba(255, 255, 255, 0) 40%), #FFF;
     box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
 }
-.arrow>span{
+
+.arrow>span {
     padding: 10px 15px;
     border-radius: 50%;
     background-color: var(--orange);
     font-weight: 900;
     color: #FFF;
 
+}
+
+/* ------------------------------------- our stories ---------------------------- */
+.our-stories {
+    padding: var(--primary-padding);
+    text-align: center;
+    background-image: url('assets/bg.png'), linear-gradient(0deg, rgba(254, 163, 1, 0.30) 0%, rgba(255, 255, 255, 0.30) 100%);
+    background-repeat: no-repeat;
+}
+
+.stories-card {
+    padding: var(--secondary-padding);
+    border-radius: var(--primary-border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.part1{
+    flex: 1;
+    height: 540px;
+}
+.story-card{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--primary-border-radius);
+}
+.text-section{
+    text-align: start;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.img>img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.date {
+    position: relative;
+    border-radius: 47.934px;
+    background: #95B226;
+    color: white;
+    padding: 1rem;
+    width: fit-content;
+    top: -2rem;
+    left: 2rem;
+}
+.text{
+    color: var(--dark-02);
+}
+.part2{
+    height: 540px;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+
+}
+.part2 .story-card .img{
+height: 170px;
+}
+.part2 .story-card .img>img{
+    height: fit-content;
+}
+.part2 .story-card .img .date{
+    font-size: var(--primary-font);
+    padding: 10px;
+    top:-1.5rem;
 }

@@ -33,7 +33,8 @@
     .hero-section-part2 {
         width: 45%;
     }
-/* ---------------- standard curriculum section -------------------- */
+
+    /* ---------------- standard curriculum section -------------------- */
     .curriculum-cards {
         flex-wrap: wrap;
     }
@@ -42,6 +43,17 @@
         width: 45%;
     }
 
+    .stories-card {
+        flex-direction: column;
+    }
+
+    .part2 {
+        height: 100%;
+    }
+
+    .part2 .story-card .img {
+        height: 270px;
+    }
 
 
 
@@ -66,4 +78,11 @@
 
 
 
+
+}
+
+@media screen and (max-width:850px) {
+    .part2 .story-card .img {
+            height: 204px;
+        }
 }
