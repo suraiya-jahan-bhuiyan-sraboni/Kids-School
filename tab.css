@@ -14,22 +14,45 @@
     .navbar {
         border: 1px solid var(--orange);
     }
-.brand>img {
-    width: 50px;
-    
-}
-.hero-section-part1>h1 {
-    font-size: 1.5rem;
-}
-.hero-section-part1 {
-    width: 55%;
-    gap: 1rem;
 
-}
+    .brand>img {
+        width: 50px;
 
-.hero-section-part2 {
-    width: 45%;
-}
+    }
+
+    .hero-section-part1>h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section-part1 {
+        width: 55%;
+        gap: 1rem;
+
+    }
+
+    .hero-section-part2 {
+        width: 45%;
+    }
+/* ---------------- standard curriculum section -------------------- */
+    .curriculum-cards {
+        flex-wrap: wrap;
+    }
+
+    .curriculum-card {
+        width: 45%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
