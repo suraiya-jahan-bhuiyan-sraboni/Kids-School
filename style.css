@@ -44,7 +44,14 @@ img {
     object-fit: contain;
 }
 
-header {}
+marquee {
+    font-size: var(--primary-font);
+    border:solid var(--dark-02);
+    border-left: 0;
+    border-right: 0;
+    color:var(--dark-02);
+    font-weight: 400;
+}
 
 /* ---------------------- nav section ------------------------ */
 .navbar {
@@ -163,6 +170,10 @@ header {}
 
 .curriculum-card>a {
     font-size: var(--primary-font);
+    transition: all ease-in-out 1s;
+}
+.curriculum-card>a:hover {
+    font-size: var(--secondary-font);
 }
 
 .card1 {
@@ -189,6 +200,11 @@ header {}
     background-color: var(--orange);
     font-weight: 900;
     color: #FFF;
+    transition: all ease-in-out 1s;
+
+}
+.arrow>span:hover{
+    background-color: #752d70;
 
 }
 
@@ -198,6 +214,8 @@ header {}
     text-align: center;
     background-image: url('assets/bg.png'), linear-gradient(0deg, rgba(254, 163, 1, 0.30) 0%, rgba(255, 255, 255, 0.30) 100%);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .item1 {

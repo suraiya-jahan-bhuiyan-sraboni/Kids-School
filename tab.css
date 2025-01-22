@@ -7,6 +7,10 @@
         --secondary-padding: 3rem 0;
     }
 
+    marquee {
+       border: 0;
+    }
+
     .brand>h1 {
         display: none;
     }
@@ -45,16 +49,18 @@
 
     /* ---------------- our stroies section -------------------- */
 
-.text-section {
-    padding: 2rem;
-}
-        .stories-card {
-            grid-template-areas: 'card1 card1  '
-                ' . . '
-                ' . .';
-            gap: 1rem;
-        }
-/* ----------------------------- footer section ------------------------------------- */
+    .text-section {
+        padding: 2rem;
+    }
+
+    .stories-card {
+        grid-template-areas: 'card1 card1  '
+            ' . . '
+            ' . .';
+        gap: 1rem;
+    }
+
+    /* ----------------------------- footer section ------------------------------------- */
     footer {
         flex-wrap: wrap;
         justify-content: center;

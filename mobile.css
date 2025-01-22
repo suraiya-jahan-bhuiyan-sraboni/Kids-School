@@ -6,7 +6,9 @@
         --primary-padding: 4rem 1.2rem;
         --secondary-padding: 2rem 0;
     }
-
+marquee {
+    display: none;
+}
 
     .brand>h1 {
         display: none;
@@ -42,6 +44,9 @@
     }
 
     /* ---------------- standard curriculum section -------------------- */
+    .standard-curriculum{
+        padding-top: 2rem;
+    }
     .curriculum-card {
         width: 90%;
     }
@@ -57,6 +62,7 @@
 
     .our-stories {
         padding-top: 0;
+        background-position: bottom left;
     }
 
     .item1 {
@@ -70,9 +76,10 @@
     .text-section {
         padding: 1rem;
     }
-        .text-section >h5{
-            font-size: var(--primary-font);
-        }
+
+    .text-section>h5 {
+        font-size: var(--primary-font);
+    }
 
     /* ---------------- footer section -------------------- */
     footer {
